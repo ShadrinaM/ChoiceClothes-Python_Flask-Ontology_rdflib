@@ -1,0 +1,1663 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user1/ontologies/2025/8/clothing"
+     xml:base="http://www.semanticweb.org/user1/ontologies/2025/8/clothing"
+     xmlns:cl="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#подходитДляОсадков -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#подходитДляОсадков">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЭлементОдежды"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осадки"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#подходитДляСезона -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#подходитДляСезона">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЭлементОдежды"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сезон"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#подходитДляЦели -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#подходитДляЦели">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЭлементОдежды"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЦельВыхода"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Бренд -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Бренд">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЭлементОдежды"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Название -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Название">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЭлементОдежды"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Босоножки -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Босоножки">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Обувь"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Брюки -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Брюки">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Низ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Верх -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Верх">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЛегкаяОдежда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ВерхняяОдежда -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ВерхняяОдежда">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЭлементОдежды"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ветровка -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ветровка">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ВерхняяОдежда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ГоловныеУборы -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ГоловныеУборы">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЛегкаяОдежда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ДеловаяЦель -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ДеловаяЦель">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЦельВыхода"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Джинсы -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Джинсы">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Низ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Комбинезон -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Комбинезон">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЛегкаяОдежда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#КомплектОдежды -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#КомплектОдежды"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#КонтекстВыбора -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#КонтекстВыбора"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Костюм -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Костюм">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЛегкаяОдежда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Кроссовки -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Кроссовки">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Обувь"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Куртка -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Куртка">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ВерхняяОдежда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЛегкаяОдежда -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЛегкаяОдежда">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЭлементОдежды"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лонгслив -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лонгслив">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Верх"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Низ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Низ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЛегкаяОдежда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Обувь -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Обувь">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЭлементОдежды"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осадки -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осадки">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ПогодныеУсловия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пальто -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пальто">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ВерхняяОдежда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Платье -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Платье">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЛегкаяОдежда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ПовседневнаяЦель -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ПовседневнаяЦель">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЦельВыхода"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ПогодныеУсловия -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ПогодныеУсловия">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#КонтекстВыбора"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ПраздничнаяЦель -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ПраздничнаяЦель">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЦельВыхода"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Рубашка -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Рубашка">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Верх"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сапоги -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сапоги">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Обувь"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Свитер -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Свитер">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Верх"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сезон -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сезон">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ПогодныеУсловия"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#СпортивнаяЦель -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#СпортивнаяЦель">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЦельВыхода"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Толстовка -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Толстовка">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Верх"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Топ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Топ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Верх"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Туфли -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Туфли">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Обувь"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Футболка -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Футболка">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Верх"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЦельВыхода -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЦельВыхода">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#КонтекстВыбора"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шапка -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шапка">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ГоловныеУборы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шляпа -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шляпа">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ГоловныеУборы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шорты -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шорты">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Низ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЭлементОдежды -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ЭлементОдежды">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#КомплектОдежды"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Юбка -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Юбка">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Низ"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Босоножки1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Босоножки1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Босоножки"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:Бренд>Bershka</cl:Бренд>
+        <cl:Название>Летние босоножки</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Босоножки2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Босоножки2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Босоножки"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:Бренд>HM</cl:Бренд>
+        <cl:Название>Босоножки греческие</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Босоножки3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Босоножки3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Босоножки"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Zara</cl:Бренд>
+        <cl:Название>Вечерние босоножки</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Брюки1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Брюки1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Брюки"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Massimo Dutti</cl:Бренд>
+        <cl:Название>Офисные брюки</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Брюки2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Брюки2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Брюки"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Uniqlo</cl:Бренд>
+        <cl:Название>Чинос</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Брюки3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Брюки3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Брюки"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Adidas</cl:Бренд>
+        <cl:Название>Спортивные брюки</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сезон"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ветровка1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ветровка1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ветровка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+                <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>More</cl:Бренд>
+        <cl:Название>Ветровка Глория</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ветровка2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ветровка2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ветровка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Columbia</cl:Бренд>
+        <cl:Название>Дождевик</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ветровка3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ветровка3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ветровка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Nike</cl:Бренд>
+        <cl:Название>Спортивная ветровка</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Джинсы1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Джинсы1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Джинсы"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:Бренд>Levis</cl:Бренд>
+        <cl:Название>Классические джинсы</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Джинсы2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Джинсы2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Джинсы"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:Бренд>Wrangler</cl:Бренд>
+        <cl:Название>Синие джинсы</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Джинсы3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Джинсы3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Джинсы"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Nike</cl:Бренд>
+        <cl:Название>Спортивные джинсы</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осадки"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сезон"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Комбинезон1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Комбинезон1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Комбинезон"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:Бренд>HM</cl:Бренд>
+        <cl:Название>Летний комбинезон</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Комбинезон2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Комбинезон2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Комбинезон"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Nike</cl:Бренд>
+        <cl:Название>Спортивный комбинезон</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Комбинезон3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Комбинезон3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Комбинезон"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>The North Face</cl:Бренд>
+        <cl:Название>Деловой комбинезон</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Костюм1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Костюм1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Костюм"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Hugo Boss</cl:Бренд>
+        <cl:Название>Деловой костюм</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Костюм2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Костюм2">
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Armani</cl:Бренд>
+        <cl:Название>Вечерний костюм</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Костюм3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Костюм3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Костюм"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Zara</cl:Бренд>
+        <cl:Название>Летний костюм</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Кросовки1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Кросовки1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Кроссовки"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Rebook</cl:Бренд>
+        <cl:Название>Кросовки винтажные</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#КросовкиШаблон -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#КросовкиШаблон">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Кроссовки"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Rebook</cl:Бренд>
+        <cl:Название>Кросовки кожанные</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Кроссовки2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Кроссовки2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Кроссовки"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Nike</cl:Бренд>
+        <cl:Название>Беговые кроссовки</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Кроссовки3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Кроссовки3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Кроссовки"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Adidas</cl:Бренд>
+        <cl:Название>Зимние кроссовки</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Куртка1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Куртка1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Куртка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Zara</cl:Бренд>
+        <cl:Название>Куртка джинсовая</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Куртка2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Куртка2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Куртка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Levis</cl:Бренд>
+        <cl:Название>Джинсовая куртка</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Куртка3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Куртка3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Куртка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>The North Face</cl:Бренд>
+        <cl:Название>Ветрозащитная куртка</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сезон"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лонгслив1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лонгслив1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лонгслив"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лонгслив2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лонгслив2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лонгслив"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:Бренд>Bershka</cl:Бренд>
+        <cl:Название>Лонгслив с котом</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лонгслив3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лонгслив3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лонгслив"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:Бренд>Gap</cl:Бренд>
+        <cl:Название>Базовый лонгслив</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осадки"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сезон"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ДеловаяЦель"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пальто1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пальто1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пальто"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:Бренд>Версаче</cl:Бренд>
+        <cl:Название>Пальто дутое</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пальто2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пальто2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пальто"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+                <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Lime</cl:Бренд>
+        <cl:Название>Пальто драповое</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пальто3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пальто3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пальто"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+                <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Lime</cl:Бренд>
+        <cl:Название>Пальтооооо</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Платье1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Платье1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Платье"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Mango</cl:Бренд>
+        <cl:Название>Вечернее платье мини</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Платье2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Платье2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Платье"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Lime</cl:Бренд>
+        <cl:Название>Вечернее платье макси</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Платье3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Платье3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Платье"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>HM</cl:Бренд>
+        <cl:Название>Кроткое платье</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пляж -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пляж">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ПовседневнаяЦель"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ПовседневнаяЦель"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ПовседневнаяЦель"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ПраздничнаяЦель"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Рубашка1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Рубашка1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Рубашка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Tommy Hilfiger</cl:Бренд>
+        <cl:Название>Повседневная рубашка</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Рубашка2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Рубашка2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Рубашка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Massimo Dutti</cl:Бренд>
+        <cl:Название>Офисная рубашка</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Рубашка3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Рубашка3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Рубашка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Hugo Boss</cl:Бренд>
+        <cl:Название>Рубашка классическая</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сапоги1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сапоги1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сапоги"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Uniqlo</cl:Бренд>
+        <cl:Название>Сапоги кожанные</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сапоги2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сапоги2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сапоги"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Uniqlo</cl:Бренд>
+        <cl:Название>Полусапожки</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сапоги3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сапоги3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Сапоги"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Timberland</cl:Бренд>
+        <cl:Название>Зимние сапоги</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Свитер1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Свитер1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Свитер"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>ECCO</cl:Бренд>
+        <cl:Название>Свитер с оленем</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Свитер2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Свитер2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Свитер"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Marks Spencer</cl:Бренд>
+        <cl:Название>Шерстяной свитер</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Свитер3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Свитер3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Свитер"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Uniqlo</cl:Бренд>
+        <cl:Название>Теплый свитер</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осадки"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Толстовка1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Толстовка1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Толстовка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:Бренд>Champion</cl:Бренд>
+        <cl:Название>Толстовка с капюшоном</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Толстовка2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Толстовка2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Толстовка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:Бренд>Nike</cl:Бренд>
+        <cl:Название>Спортивная толстовка</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Толстовка3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Толстовка3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Толстовка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:Бренд>Supreme</cl:Бренд>
+        <cl:Название>Толстовка оверсайз</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Топ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Топ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Топ"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:Бренд>Bershka</cl:Бренд>
+        <cl:Название>Летний топ</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Топ2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Топ2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Топ"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Adidas</cl:Бренд>
+        <cl:Название>Спортивный топ</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Топ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Топ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Топ"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Zara</cl:Бренд>
+        <cl:Название>Вечерний топ</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#СпортивнаяЦель"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Туфли1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Туфли1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Туфли"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:Бренд>ECCO</cl:Бренд>
+        <cl:Название>Летние туфли</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Туфли2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Туфли2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Туфли"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:Бренд>ECCO</cl:Бренд>
+        <cl:Название>Классические туфли</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Туфли3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Туфли3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Туфли"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Clarks</cl:Бренд>
+        <cl:Название>Туфли оксфорды</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Футболка1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Футболка1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Футболка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:Бренд>Nike</cl:Бренд>
+        <cl:Название>Футболка с логотипом</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Футболка2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Футболка2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Футболка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Uniqlo</cl:Бренд>
+        <cl:Название>Хлопковая футболка</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Футболка3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Футболка3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Футболка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Adidas</cl:Бренд>
+        <cl:Название>Спортивная футболка</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шапка1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шапка1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шапка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Timberland</cl:Бренд>
+        <cl:Название>Зимняя шапка</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шапка2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шапка2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шапка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>The North Face</cl:Бренд>
+        <cl:Название>Шапка с помпоном</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шапка3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шапка3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шапка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Adidas</cl:Бренд>
+        <cl:Название>Спортивная шапка</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шляпа1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шляпа1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шляпа"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пляж"/>
+        <cl:Бренд>Roxy</cl:Бренд>
+        <cl:Название>Пляжная шляпа</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шляпа2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шляпа2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шляпа"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:Бренд>HM</cl:Бренд>
+        <cl:Название>Соломенная шляпа</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шляпа3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шляпа3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шляпа"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Gucci</cl:Бренд>
+        <cl:Название>Элегантная шляпа</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шорты1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шорты1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шорты"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:Бренд>Nike</cl:Бренд>
+        <cl:Название>Спортивные шорты</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шорты2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шорты2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шорты"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#ТренировкаВЗале"/>
+        <cl:Бренд>Adidas</cl:Бренд>
+        <cl:Название>Шорты для бега</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шорты3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шорты3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Шорты"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Пляж"/>
+        <cl:Бренд>Billabong</cl:Бренд>
+        <cl:Название>Пляжные шорты</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Юбка1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Юбка1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Юбка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Mango</cl:Бренд>
+        <cl:Название>Офисная юбка-карандаш</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Юбка2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Юбка2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Юбка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Дождь"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Снег"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Зима"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Офис"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Прогулка"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Работа"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>Zara</cl:Бренд>
+        <cl:Название>Летняя юбка</cl:Название>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Юбка3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Юбка3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Юбка"/>
+        <cl:подходитДляОсадков rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#НетОсадков"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Весна"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Лето"/>
+        <cl:подходитДляСезона rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Осень"/>
+        <cl:подходитДляЦели rdf:resource="http://www.semanticweb.org/user1/ontologies/2025/8/clothing#Ресторан"/>
+        <cl:Бренд>HM</cl:Бренд>
+        <cl:Название>Вечерняя юбка</cl:Название>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

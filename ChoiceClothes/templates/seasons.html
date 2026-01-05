@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Сезоны</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #f1f5f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(15, 23, 42, 0.9);
+            border-radius: 32px;
+            padding: 48px;
+            box-shadow: 
+                0 25px 50px -12px rgba(0, 0, 0, 0.5),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 4px;
+            background: linear-gradient(90deg, #f59e0b, #d97706, #b45309);
+            border-radius: 0 0 4px 4px;
+            filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.5));
+        }
+
+        h1 {
+            color: #f1f5f9;
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #cbd5e1;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 32px;
+            backdrop-filter: blur(10px);
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #f1f5f9;
+            transform: translateX(-4px);
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+
+        .seasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .season-card {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 32px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .season-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: linear-gradient(135deg, 
+                rgba(245, 158, 11, 0.1) 0%,
+                rgba(217, 119, 6, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .season-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(245, 158, 11, 0.3);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(245, 158, 11, 0.1);
+        }
+
+        .season-card:hover::before {
+            opacity: 1;
+        }
+
+        .season-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 4px 6px rgba(245, 158, 11, 0.3));
+        }
+
+        .season-name {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #f1f5f9;
+            margin-bottom: 16px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .season-desc {
+            color: #94a3b8;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .season-temp {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(245, 158, 11, 0.1);
+            color: #fbbf24;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 40px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            border: 2px dashed rgba(255, 255, 255, 0.1);
+        }
+
+        .empty-icon {
+            font-size: 4rem;
+            color: rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .empty-text {
+            color: #64748b;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            background: radial-gradient(circle, 
+                rgba(245, 158, 11, 0.1) 0%, 
+                rgba(217, 119, 6, 0.1) 100%);
+            border-radius: 50%;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        .header-info {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 32px 24px;
+                border-radius: 24px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .seasons-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .season-card {
+                padding: 24px;
+            }
+            
+            .season-icon {
+                font-size: 3rem;
+            }
+            
+            .season-name {
+                font-size: 1.5rem;
+            }
+        }
+
+        .season-indicator {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(245, 158, 11, 0.3);
+            border: 2px solid rgba(245, 158, 11, 0.5);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+            }
+        }
+
+        /* Дополнительные стили для разных сезонов */
+        .season-card.spring .season-icon { background: linear-gradient(135deg, #10b981, #059669); }
+        .season-card.spring .season-name { color: #10b981; }
+        .season-card.spring .season-temp { background: rgba(16, 185, 129, 0.1); color: #34d399; border-color: rgba(16, 185, 129, 0.2); }
+        
+        .season-card.summer .season-icon { background: linear-gradient(135deg, #f59e0b, #d97706); }
+        .season-card.summer .season-name { color: #f59e0b; }
+        .season-card.summer .season-temp { background: rgba(245, 158, 11, 0.1); color: #fbbf24; border-color: rgba(245, 158, 11, 0.2); }
+        
+        .season-card.autumn .season-icon { background: linear-gradient(135deg, #d97706, #b45309); }
+        .season-card.autumn .season-name { color: #d97706; }
+        .season-card.autumn .season-temp { background: rgba(217, 119, 6, 0.1); color: #f59e0b; border-color: rgba(217, 119, 6, 0.2); }
+        
+        .season-card.winter .season-icon { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+        .season-card.winter .season-name { color: #3b82f6; }
+        .season-card.winter .season-temp { background: rgba(59, 130, 246, 0.1); color: #60a5fa; border-color: rgba(59, 130, 246, 0.2); }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <h1>
+            <span>🍂</span>
+            Сезоны года
+        </h1>
+        
+        <div class="header-info">
+            Настройте подбор одежды в зависимости от времени года. Каждый сезон имеет свои особенности и температурные режимы.
+        </div>
+        
+        <a href="/" class="back-btn">← Назад в гардероб</a>
+        
+        <div class="seasons-grid">
+            {% for season in seasons %}
+            {% set season_class = 'spring' if 'весн' in season.name.lower() else 
+                                 'summer' if 'лет' in season.name.lower() else 
+                                 'autumn' if 'осен' in season.name.lower() else 
+                                 'winter' if 'зим' in season.name.lower() else '' %}
+            
+            <div class="season-card {{ season_class }}">
+                <div class="season-indicator"></div>
+                <div class="season-icon">
+                    {% if 'весн' in season.name.lower() %}🌱
+                    {% elif 'лет' in season.name.lower() %}☀️
+                    {% elif 'осен' in season.name.lower() %}🍂
+                    {% elif 'зим' in season.name.lower() %}❄️
+                    {% else %}📅{% endif %}
+                </div>
+                <h2 class="season-name">{{ season.name }}</h2>
+                <p class="season-desc">
+                    {% if 'весн' in season.name.lower() %}
+                    Тёплый сезон с переменчивой погодой. Идеальное время для лёгкой многослойной одежды.
+                    {% elif 'лет' in season.name.lower() %}
+                    Самый тёплый сезон года. Выбирайте лёгкую, дышащую одежду из натуральных тканей.
+                    {% elif 'осен' in season.name.lower() %}
+                    Переходный сезон с постепенным похолоданием. Утепляйтесь постепенно, используя слои.
+                    {% elif 'зим' in season.name.lower() %}
+                    Холодный сезон. Требует тёплой, многослойной одежды и защиты от ветра и влаги.
+                    {% else %}
+                    Универсальный сезон для различной одежды в зависимости от условий.
+                    {% endif %}
+                </p>
+                <div class="season-temp">
+                    {% if 'весн' in season.name.lower() %}от +5°C до +20°C
+                    {% elif 'лет' in season.name.lower() %}от +20°C до +35°C
+                    {% elif 'осен' in season.name.lower() %}от 0°C до +15°C
+                    {% elif 'зим' in season.name.lower() %}от -30°C до 0°C
+                    {% else %}Различная температура{% endif %}
+                </div>
+            </div>
+            {% endfor %}
+            
+            {% if seasons|length == 0 %}
+            <div class="empty-state">
+                <div class="empty-icon">🍂</div>
+                <p class="empty-text">Сезоны не найдены</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        // Создание частиц для фона
+        const particlesContainer = document.getElementById('particles');
+        const particleCount = 25;
+        
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            
+            const size = Math.random() * 80 + 40;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100 + 100}%`;
+            
+            particle.style.animationDuration = `${Math.random() * 20 + 20}s`;
+            particle.style.animationDelay = `${Math.random() * 5}s`;
+            
+            particlesContainer.appendChild(particle);
+        }
+
+        // Анимация карточек при загрузке
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.season-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
